@@ -1,6 +1,4 @@
-import React from 'react'
-
-
+import React from 'react';
 
 const Hero = () => {
   return (
@@ -9,16 +7,18 @@ const Hero = () => {
       className="min-h-screen bg-no-repeat bg-[url(/ammar2.png)] bg-left lg:bg-[15%] bg-cover"
       style={{ backgroundSize: "35%" }}
     >
-      <div className="container grid lg:grid-cols-2 h-[calc(100vh-60px)] px-4 sm:px-6">
+      <div className="relative container grid grid-cols-1 lg:grid-cols-2 h-[calc(100vh-60px)] px-4 sm:px-6">
         {/* Left side */}
-        <div className="hidden lg:block"></div>
+        <div className="flex justify-center items-center mb-8 lg:mb-0">
+          {/* Optional content for left side on larger screens */}
+        </div>
 
         {/* Right side */}
-        <div className="text-sky-600 font-bold leading-tight flex justify-center items-center lg:justify-end lg:items-center">
-          <div className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[130px] font-poppins">
-            <p className="text-center lg:text-right">It&apos;s me</p>
-            <p className="text-center lg:text-right">Ammar</p>
-            <p className="text-center lg:text-right">Iqbal</p>
+        <div className="absolute lg:relative lg:right-0 right-8 flex flex-col justify-center items-center lg:items-start text-sky-600 font-bold leading-tight">
+          <div className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[130px] font-poppins text-center lg:text-left">
+            <p>It&apos;s me</p>
+            <p>Ammar</p>
+            <p>Iqbal</p>
           </div>
         </div>
       </div>
